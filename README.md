@@ -37,7 +37,7 @@ The following instruction is for replicating the second experiment reported in [
 If you want to use other word-embeddings, you should follow the following format: 
 
 - create `words.lst` containing all frequent words (e.g. words appear at least 2 times), each word per line. The first line is always `#UNKNOWN#`
-- create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`. Words in `words.lst` but not in `wembs.txt` will be randomly generated. 
+- create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`. Vectors of words in `words.lst` but not in `wembs.txt` will be randomly initialised. 
 	
 
 ####Train
