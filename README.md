@@ -37,7 +37,7 @@ The following instruction is for replicating the second experiment reported in [
 If you want to use other word-embeddings, you should follow the following format: 
 
 - create `words.lst` containing all frequent words (e.g. words appear at least 2 times), each word per line. The first line is always `#UNKNOWN#`
-- create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`
+- create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`. Words in `words.lst` but not in `wembs.txt` will be randomly generated. 
 	
 
 ####Train
@@ -70,6 +70,7 @@ In `Release`, open `train.config`, which stores the default parameter values. It
 You can try the traditional RNN by setting `compositionType NORMAL`, and try other activation functions by setting `functionType <NAME>` where `<NAME>` could be `softsign`, `sigmoid`, `rlu`.
 
 Execute
+
 	./lstm-rnn --train train.config model.dat
 
 where the resulted model will be stored in file `model.dat`.
