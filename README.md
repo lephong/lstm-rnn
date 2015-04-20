@@ -12,7 +12,7 @@ This package contains three components
 
 + `src` - source code files in C++ of the LSTM-RNN,
 
-+ `data` - Stanford Sentiment Treebank and Glove word embeddings 
++ `data` - [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/treebank.html) and [GloVe word embeddings](http://nlp.stanford.edu/projects/glove/) 
 
 + `Release` - for compiling the source code.
 
@@ -20,7 +20,7 @@ This package contains three components
 ###Installation
 
 Install [OpenBlas](http://www.openblas.net) at `/opt/OpenBLAS`.
-Go to `Release`, execute `make`.
+Go to `Release`, execute `make`. It should work with gcc 4.9 or later. 
 
 
 ###Usage
@@ -32,16 +32,16 @@ The following instruction is for replicating the second experiment reported in [
 
 `data/trees` contains the train/dev/test files of the Stanford Sentiment Treebank (STB).
 
-`data/dic/glove-300d-840B` contains the 300-D GloVeword embeddings, in which vectors of words not in the STB are removed.  
+`data/dic/glove-300d-840B` contains the 300-D GloVe word embeddings (vectors of words not in the STB are removed).  
 
 If you want to use other word-embeddings, you should follow the following format: 
 
-	create `words.lst` containing all frequent words (e.g. words appear at least 2 times), each word per line. The first line is always `#UNKNOWN#`
-	create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>'. For each following line: `<word> <vector>`
+- create `words.lst` containing all frequent words (e.g. words appear at least 2 times), each word per line. The first line is always `#UNKNOWN#`
+- create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`
 	
 
 ####Train
-Go to `Release`. Open `train.config`, which stores the default parameter values and file names. It should look like
+In `Release`, open `train.config`, which stores the default parameter values. It should look like
 
 	dim 50
 
