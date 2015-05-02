@@ -20,7 +20,7 @@ This package contains three components
 ###Installation
 
 - Install [OpenBlas](http://www.openblas.net) at `/opt/OpenBLAS`.
-- Go to `Release`, execute `make`. It should work with gcc 4.9 or later. 
+- Go to `Release`, execute `make`. It should work with gcc 4.9 or later. (If OpenBlas is not installed at `/opt/OpenBLAS`, you need to replace `/opt/OpenBLAS` by the correct path in `makefile` and `src/subdir.mk`.) 
 
 
 ###Usage
