@@ -30,9 +30,9 @@ The following instruction is for replicating the second experiment reported in [
 
 ####Data
 
-`data/trees` contains the train/dev/test files of the Stanford Sentiment Treebank (STB).
+`data/trees` contains the train/dev/test files of the Stanford Sentiment Treebank (SST).
 
-`data/dic/glove-300d-840B` contains the 300-D GloVe word embeddings (vectors of words not in the STB are removed).  
+`data/dic/glove-300d-840B` contains the 300-D GloVe word embeddings (vectors of words not in the SST are removed).  
 
 If you want to use other word-embeddings, you should follow the following format: 
 
