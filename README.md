@@ -73,7 +73,7 @@ Execute
 
 	./lstm-rnn --train train.config model.dat
 
-where the resulted model will be stored in file `model.dat`.
+where the resulting model will be stored in `model.dat`.
 
 
 ####Evaluation
