@@ -7,7 +7,7 @@ A C++ implementation of the long short-term memory recursive neural network mode
 
 Written and maintained by Phong Le (p.le [at] uva.nl)
 
-###Package
+### Package
 This package contains three components
 
 + `src` - source code files in C++ of the LSTM-RNN,
@@ -17,18 +17,18 @@ This package contains three components
 + `Release` - for compiling the source code.
 
 
-###Installation
+### Installation
 
 - Install [OpenBlas](http://www.openblas.net) at `/opt/OpenBLAS`.
 - Go to `Release`, execute `make`. It should work with gcc 4.9 or later. (If OpenBlas is not installed at `/opt/OpenBLAS`, you need to replace `/opt/OpenBLAS` by the correct path in `makefile` and `src/subdir.mk`.) 
 
 
-###Usage
+### Usage
 
 The following instruction is for replicating the second experiment reported in [1]. Some small changes are needed for your own cases.
 
 
-####Data
+#### Data
 
 `data/trees` contains the train/dev/test files of the Stanford Sentiment Treebank (SST).
 
@@ -40,7 +40,7 @@ If you want to use other word-embeddings, you should follow the following format
 - create `wembs.txt` containing word vectors. The first line is `<number-of-vectors> <dimension>`. For each following line: `<word> <vector>`. Vectors of words in `words.lst` but not in `wembs.txt` will be randomly initialised. 
 	
 
-####Train
+#### Train
 In `Release`, open `train.config`, which stores the default parameter values. It should look like
 
 	dim 50
@@ -76,7 +76,7 @@ Execute
 where the resulting model will be stored in `model.dat`.
 
 
-####Evaluation
+#### Evaluation
 
 Execute
 
