@@ -7,6 +7,8 @@ A C++ implementation of the long short-term memory recursive neural network mode
 
 Written and maintained by Phong Le (p.le [at] uva.nl)
 
+**Note: this is similar to [Tree-LSTM](https://www.aclweb.org/anthology/P15-1150), which was proposed at the same time.**
+
 ### Package
 This package contains three components
 
